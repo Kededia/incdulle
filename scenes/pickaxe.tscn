@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://duogi22xtno17"]
+
+[ext_resource type="Script" uid="uid://yagkq05abf3f" path="res://scripts/pickaxe.gd" id="1_2ikqw"]
+[ext_resource type="Texture2D" uid="uid://0yy0kvmk7bka" path="res://assets/pickaxes.png" id="1_40cab"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ikqw"]
+atlas = ExtResource("1_40cab")
+region = Rect2(0, 0, 32, 32)
+
+[node name="Pickaxe" type="Node2D" unique_id=1920910251]
+script = ExtResource("1_2ikqw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=76183141]
+position = Vector2(-5, -4)
+rotation = -0.7817773
+texture = SubResource("AtlasTexture_2ikqw")
+
+[node name="Timer" type="Timer" parent="." unique_id=198374482]

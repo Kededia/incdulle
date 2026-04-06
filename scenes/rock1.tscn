@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dafiq6wqcfvp4"]
+
+[ext_resource type="Texture2D" uid="uid://2lxiryetqmxq" path="res://assets/isometric tileset/separated images/tile_062.png" id="1_fyui0"]
+[ext_resource type="Script" uid="uid://6x2ag2x6hgj1" path="res://scripts/rock.gd" id="1_w7urf"]
+
+[node name="Rock1" type="Node2D" unique_id=1218628821]
+position = Vector2(0, -8)
+script = ExtResource("1_w7urf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=293796140]
+texture = ExtResource("1_fyui0")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1242706343]
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1467984209]
+visible = false
+polygon = PackedVector2Array(-2, -6, 0, -4, 2, -5, 8, -5, 12, -2, 12, 10, 6, 14, -6, 14, -12, 10, -12, 2, -11, 1, -12, 0, -12, -2, -6, -6)

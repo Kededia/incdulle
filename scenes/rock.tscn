@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dbrd1rm7lgi0p"]
+
+[ext_resource type="Texture2D" uid="uid://cdrihul4d5yb8" path="res://assets/isometric tileset/separated images/tile_053.png" id="1_1di36"]
+
+[node name="Rock2" type="Node2D" unique_id=1218628821]
+position = Vector2(0, -8)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=293796140]
+texture = ExtResource("1_1di36")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1242706343]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1467984209]
+visible = false
+polygon = PackedVector2Array(4, -3, 6, -1, 8, 2, 10, 7, 10, 10, 2, 15, -3, 15, -9, 10, -6, 0, 0, -3)
