@@ -1,18 +1,24 @@
 [gd_scene format=3 uid="uid://cs6qhq4djgjvf"]
 
 [ext_resource type="Script" uid="uid://6x2ag2x6hgj1" path="res://scripts/rock.gd" id="1_4tkwb"]
-[ext_resource type="Texture2D" uid="uid://cdrihul4d5yb8" path="res://assets/isometric tileset/separated images/tile_053.png" id="1_hjq04"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hjq04"]
+load_path = "res://.godot/imported/rock.png-287df246b05da9994798407cdfe616b7.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4tkwb"]
+atlas = SubResource("CompressedTexture2D_hjq04")
+region = Rect2(0, 0, 32, 32)
 
 [node name="Rock2" type="Node2D" unique_id=1218628821]
-position = Vector2(0, -8)
+position = Vector2(0, -4)
 script = ExtResource("1_4tkwb")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=293796140]
-texture = ExtResource("1_hjq04")
+texture = SubResource("AtlasTexture_4tkwb")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1242706343]
 collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1467984209]
-visible = false
+position = Vector2(0, -6)
 polygon = PackedVector2Array(4, -3, 6, -1, 8, 2, 10, 7, 10, 10, 2, 15, -3, 15, -9, 10, -6, 0, 0, -3)

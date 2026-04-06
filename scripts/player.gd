@@ -38,6 +38,4 @@ func rock_exited(rock: Rock):
 
 func on_rock_hit(rock):
 	#Globals._create_floating(rock.global_position, "Hit!")
-	var tw = get_tree().create_tween()
-	tw.tween_property(rock, "modulate", Color.RED, .2)
-	tw.tween_property(rock, "modulate", Color.WHITE, .05)
+	rock.mine()
